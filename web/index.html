@@ -279,22 +279,25 @@
 
 
     <!-- Description 2 -->
-    <div class="tabs">
+    <div id="pricing" class="tabs">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>AWS PRICING</h2>
+                    </div>
                     <div class="tabs-container">
 
                         <!-- Tabs Links -->
                         <ul class="nav nav-tabs" id="cedoTabs" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="far fa-clock"></i>Schedule</a>
+                                <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">On-Demand</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-list"></i>Tracking</a>
+                                <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">Reserved</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="far fa-calendar-alt"></i>Organize</a>
+                                <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">AWS Plans</a>
                             </li>
                         </ul>
                         <!-- end of tabs links -->
@@ -303,65 +306,93 @@
                         <div class="tab-content" id="cedoTabsContent">
                             <!-- Tab -->
                             <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
-                                <p><strong>Schedule tasks</strong> to keep track of their completion. Sync provides multiple scheduling options including alarms and reminders.</p>
-                                <ul class="list-unstyled li-space-lg">
-                                    <li class="media">
-                                        <i class="far fa-check-square"></i>
-                                        <div class="media-body">You can always add new tasks or change the settings of existing ones in your calendar view or the app control panel</div>
-                                    </li>
-                                    <li class="media">
-                                        <i class="far fa-check-square"></i>
-                                        <div class="media-body">It's easy to stay focused on your most important daily activities that will get you closer to meeting your goals</div>
-                                    </li>
-                                    <li class="media">
-                                        <i class="far fa-check-square"></i>
-                                        <div class="media-body">Use phone reminders to free up your long term memory which will reduce stress and make you more productive</div>
-                                    </li>
-                                </ul>
-                                <a class="btn-solid-reg page-scroll" href="terms-conditions.html">TERMS</a> <a class="btn-outline-reg page-scroll" href="privacy-policy.html">PRIVACY</a>
+                                <table>
+                                    <tr class="header">
+                                        <th>Instance Types</th>
+                                        <th>Google Cloud</th>
+                                        <th>AWS</th>
+                                    </tr>
+                                    <tr>
+                                        <td><b>General Purpose</b><br>(Memory: AWS 8 GB/ Google Cloud 7.5 GB)</td>
+                                        <td>$0.107 per Hour</td>
+                                        <td>$0.100 per Hour</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Compute Optimized</b><br>(Memory: AWS 3.75 GB/ Google Cloud 1.8 GB)</td>
+                                        <td>$0.813 per Hour</td>
+                                        <td>$0.100 per Hour</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Memory Optimized</b><br>(Memory: AWS 15.25 GB/ Google Cloud 13 GB)</td>
+                                        <td>$0.134 per Hour</td>
+                                        <td>$0.133 per Hour</td>
+                                    </tr>
+                                </table>    
                             </div> <!-- end of tab-pane -->
                             <!-- end of tab -->
 
                             <!-- Tab -->
                             <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
-                                <p><strong>Keep track of everything</strong> and analyse your progress while using the app. In less than a month you should be seeing improved results when it comes to time management and task prioritization</p>
-                                <p><strong>Anyone can enjoy the app</strong> no matter their gender, age, occupation or location in the world. Sync's algorithms have been built to be flexible and functional for any person in the world</p>
-                                <p><strong>Achieve the impossible</strong> just by carefully monitoring your progress and keeping the app updated with daily operations. It's easier than you think and it only takes a couple of minutes</p>
-                                <a class="red" href="terms-conditions.html">Terms & Conditions >></a>
+                                <table>
+                                    <tr class="header">
+                                        <th>Instance Types</th>
+                                        <th>Google Cloud</th>
+                                        <th>AWS</th>
+                                    </tr>
+                                    <tr>
+                                        <td><b>General Purpose</b><br>(Memory: AWS 16 GB / Google Cloud 15 GB)</td>
+                                        <td>$0.128 per Hour</td>
+                                        <td>$0.123 per Hour</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Compute Optimized</b><br>(Memory: AWS 8 GB / Google Cloud 3.6 GB)</td>
+                                        <td>$0.095 per Hour</td>
+                                        <td>$0.107 per Hour</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Memory Optimized</b><br>(Memory: AWS 32 GB / Google Cloud 26 GB)</td>
+                                        <td>$0.159 per Hour</td>
+                                        <td>$0.159 per Hour</td>
+                                    </tr>
+                                </table>    
                             </div> <!-- end of tab-pane -->
                             <!-- end of tab -->
 
                             <!-- Tab -->
                             <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
-                                <p><strong>Use the power of social interactivity</strong> to keep you motivated and focused on your daily and long term goals. It's revolutionary</p>
-                                <ul class="list-unstyled li-space-lg">
-                                    <li class="media">
-                                        <i class="far fa-check-square"></i>
-                                        <div class="media-body">Commiting to something in front of a crowd gives you little room to walk back on your promise and makes you push on</div>
-                                    </li>
-                                    <li class="media">
-                                        <i class="far fa-check-square"></i>
-                                        <div class="media-body">No more frustrations of loosing focus and not being efficient. Sync main purpose is to solve just that and make you happy</div>
-                                    </li>
-                                    <li class="media">
-                                        <i class="far fa-check-square"></i>
-                                        <div class="media-body">It's the first mobile app that can turn you in a better organized person without the pressure of failing like other systems</div>
-                                    </li>
-                                    <li class="media">
-                                        <i class="far fa-check-square"></i>
-                                        <div class="media-body">Recognized by a lot of trainers and life coaches Sync is the number one tool they recommend time management</div>
-                                    </li>
-                                </ul>
+                                <table>
+                                    <tr class="header">
+                                        <th>Plans</th>
+                                        <th>1 Year</th>
+                                        <th>3 Year</th>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Monthly Payment</b></td>
+                                        <td>38%</td>
+                                        <td>57%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Partial Upfront Payment</b></td>
+                                        <td>41%</td>
+                                        <td>60%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Full Upfront Payment</b></td>
+                                        <td>42%</td>
+                                        <td>62%</td>
+                                    </tr>
+                                </table>
+                                <br>
+                                <a class="btn-solid-reg popup-with-move-anim" href="#policy">POLICY COMPARISON</a>
                             </div> <!-- end of tab-pane -->
                             <!-- end of tab -->
                         </div> <!-- end of tab-content -->
                         <!-- end of nav tabs content -->
-                    
                     </div> <!-- end of tabs-container -->
                 </div> <!-- end of col -->
-                <!-- <div class="col-lg-6">
+                <div class="col-lg-6">
                     <div class="image-container">
-                        <img class="img-fluid" src="images/description-2-app.png" alt="alternative"> -->
+                        <img class="img-fluid" src="images/pana.png" alt="alternative">
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -371,15 +402,14 @@
 
 
     <!-- Features -->
-    <!-- <div id="features" class="basic-2">
+    <div id="features" class="basic-2">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Special Features</h2>
-                    <p class="p-heading">Sync's features are designed to help you improve your time management skills and become a better organized person. Organize your tasks, schedule your appointments and meet your personal development goals with Sync</p> -->
+                    <h2>ADVANTAGES</h2>
                 </div> <!-- end of div -->
             </div> <!-- end of div -->
-            <!-- <div class="row">
+            <div class="row">
                 <div class="col-lg-4">
                     <ul class="list-unstyled li-space-lg first">
                         <li class="media">
@@ -388,8 +418,7 @@
                                 <i class="fas fa-users fa-stack-1x"></i>
                             </span>
                             <div class="media-body">
-                                <h4>Goal Setting</h4>
-                                <p>Like any self improving process, everything starts with setting your goals and committing to them</p>
+                                <h4>Rapid deployment</h4>
                             </div>
                         </li>
                         <li class="media">
@@ -412,12 +441,12 @@
                                 <p>Each option packaged in the app's menus is provided in order to improve you personally</p>
                             </div>
                         </li>
-                    </ul> -->
+                    </ul>
                 </div> <!-- end of col -->
-                <!-- <div class="col-lg-4">
-                    <img class="img-fluid" src="images/features-app.jpg" alt="alternative"> -->
+                <div class="col-lg-4">
+                    <img class="img-fluid" src="images/features-app.jpg" alt="alternative">
                 </div> <!-- end of col -->
-                <!-- <div class="col-lg-4">
+                <div class="col-lg-4">
                     <ul class="list-unstyled li-space-lg">
                         <li class="media">
                             <span class="fa-stack">
@@ -449,7 +478,7 @@
                                 <p>Get a solid foundation for your self development efforts. Try Sync mobile app for devices</p>
                             </div>
                         </li>
-                    </ul> -->
+                    </ul>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -617,18 +646,6 @@
                     <!-- end of card -->
 
                 </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <!-- <div class="row">
-                <div class="col-lg-12">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/customer-logo-1.png" alt="alternative">
-                        <img class="img-fluid" src="images/customer-logo-2.png" alt="alternative">
-                        <img class="img-fluid" src="images/customer-logo-3.png" alt="alternative">
-                        <img class="img-fluid" src="images/customer-logo-4.png" alt="alternative">
-                        <img class="img-fluid" src="images/customer-logo-5.png" alt="alternative"> -->
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
             <!-- <div class="row">
                 <div class="col-lg-12">
  -->
