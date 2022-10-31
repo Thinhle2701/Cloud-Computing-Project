@@ -11,6 +11,8 @@ const mongoose = require("mongoose");
 const { stringify } = require("querystring");
 const { Router } = require("express");
 const fs = require("fs");
+app.use(express.json());
+app.use(express.static(__dirname));
 
 app.use(express.json());
 
